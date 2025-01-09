@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding CSS</h1>
+        <p>A Simple Guide to CSS Basics</p>
+    </header>
+
+    <div class="content">
+        <section>
+            <h2>What is CSS?</h2>
+            <p>
+                CSS, or Cascading Style Sheets, is used to style and lay out web pages. It allows you to apply styles to HTML elements, control their layout, and make your web pages look beautiful.
+            </p>
+        </section>
+
+        <section>
+            <h2>Basic CSS Syntax</h2>
+            <p>
+                CSS rules are made up of selectors and declarations. A <strong>selector</strong> targets an HTML element, and a <strong>declaration</strong> specifies the style properties and values.
+            </p>
+            <pre>
+<code>
+selector {
+    property: value;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Common CSS Properties</h2>
+            <ul>
+                <li><code>color</code>: Sets the text color.</li>
+                <li><code>font-size</code>: Defines the size of the text.</li>
+                <li><code>background-color</code>: Sets the background color of an element.</li>
+                <li><code>margin</code>: Controls the space outside the element.</li>
+                <li><code>padding</code>: Controls the space inside the element.</li>
+                <li><code>border</code>: Adds a border around the element.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Positioning</h2>
+            <p>
+                CSS positioning allows you to control the placement of elements on the page. Here are the common positioning properties:
+            </p>
+            <ul>
+                <li><strong><code>static</code></strong>: Default positioning. Elements flow in the normal document flow.</li>
+                <li><strong><code>relative</code></strong>: Positions an element relative to its normal position.</li>
+                <li><strong><code>absolute</code></strong>: Positions an element relative to its nearest positioned ancestor.</li>
+                <li><strong><code>fixed</code></strong>: Positions an element relative to the viewport. It stays fixed during scrolling.</li>
+                <li><strong><code>sticky</code></strong>: Combines relative and fixed positioning. The element is treated as relative until it crosses a specified threshold, then it becomes fixed.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sample CSS Code</h2>
+            <p>Here's a simple example demonstrating CSS styling and positioning:</p>
+            <pre>
+<code>
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Positioning example */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    line-height: 100px; /* Center text vertically */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+</code>
+            </pre>
+        </section>
+    </div>
+
+    <footer>
+        <p>Created with &hearts; by Your Name</p>
+    </footer>
+</body>
+</html>
